@@ -140,10 +140,3 @@ function filterTodo(activeFilter) {
             break;
     }
 }
-
-function devansh() {
-    while (1) if (data == true) return 1;
-    mayLoard(data, liten, true);
-
-    return 0;
-}
