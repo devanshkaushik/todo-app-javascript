@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#a1d9ff), to(#2b9cff));
+  background-image: linear-gradient(to right bottom, #a1d9ff, #2b9cff);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 42rem;
+  margin-top: 20rem;
+}
+
+form {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 2rem;
+  font-size: 1.8rem;
+  border-top-left-radius: 1rem;
+}
+
+form button {
+  padding: 2rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-top-right-radius: 1rem;
+  color: #2b9cff;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+form button:hover {
+  color: #177dd6;
+}
+
+form button i {
+  font-size: 2.2rem;
+}
+
+.filter {
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.filter-tab {
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 1rem 0;
+  width: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter-tab:not(:last-child) {
+  border-right: solid 1px rgba(0, 0, 0, 0.6);
+}
+
+.filter-tab.active {
+  font-weight: 700;
+}
+
+.todo-container {
+  margin-top: 6rem;
+}
+
+.todo-container ul {
+  list-style: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.todo {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.todo:hover i {
+  opacity: 1;
+}
+
+.todo.complete {
+  opacity: 0.6;
+}
+
+.todo.complete span {
+  background-color: #a1d9ff;
+}
+
+.todo.add {
+  opacity: 0;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.todo.delete {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+  margin-bottom: -80px;
+}
+
+.todo.hide {
+  opacity: 0;
+  margin-bottom: -65px;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
+.todo span {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #2b9cff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-break: break-word;
+  margin: 0 3rem;
+}
+
+.todo i {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #2b9cff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.todo i:hover {
+  color: #177dd6;
+}
+/*# sourceMappingURL=main.css.map */
